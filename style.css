@@ -14,6 +14,12 @@
 .container{
     width: 100%;
 }
+main{
+    
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
 header{
     background:#2D25A0;
     width: 100%;
@@ -85,19 +91,21 @@ a.active,a:hover{
     }
 .banner-left{
     padding-left: 100px;
+
 }
 .banner-left h1{
     color: #FFFFFF;
     font-weight: bold;
     font-size: 4rem;
     padding-bottom: 20px;
+    
 }
 .animated{
     background: linear-gradient(to right,#CCC 50%, #6647ee 50%, #CC2E5D);
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 0.5s ease-out;
+    transition: 0.9s ease-out;
 }
 .animated:hover{
     background-position: -100%;
@@ -115,10 +123,13 @@ a.active,a:hover{
 
 .banner-img img{
     padding-top: 50px;
-    padding-right: 150px;
+    
     padding-bottom: 30px;
-    width: 556.01px;
-    height: 438px;
+    /* width: 556.01px;
+    height: 438px; */
+    width: 70%;
+    height: 30%;
+    margin-left: 50px;
   }
 .banner-img:hover img{
     transform: scale(1.5) skew(3deg);
@@ -134,19 +145,31 @@ a.active,a:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
-    margin:50px 150px 0 150px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: inherit;
+    margin: 50px;
+    padding-left: 50px;
     }
 .player{
     box-sizing: border-box;
     padding: 15px;
-    width: 330px;
-    height: 425px;
+    width: 90%;
+    height: auto;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .player img{
-    width: 300px;
-    height: 256px;
+    /* width: 300px;
+    height: 256px; */
+    width: 100%;
+    height: 70%;
+    
+    
 }
 .player p{
     color:#6C6C6C;
@@ -159,7 +182,8 @@ a.active,a:hover{
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    padding: 80px;
+    
+    margin-left: 90px;
    }
 .heightlight-left{
     
@@ -188,10 +212,12 @@ a.active,a:hover{
 }
 
 .heightlight-img img{
-    padding-top: 50px;
-    padding-right: 50px;
-    width: 567px;
-    height: 427px;
+   display: flex;
+   flex-direction: row;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 90px;
+    
    }
 .heightlight-img:hover img{
     transform: scale(1.5) skew(-20deg);
@@ -205,8 +231,9 @@ a.active,a:hover{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 	display: flex;
 	flex-direction: column;
-	min-width:850px;
+	width:80%;
 	border-radius: 10px;
+   
 	box-shadow: 0 0 2px 0 rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
 	}
 
@@ -293,14 +320,15 @@ a.active,a:hover{
     }
 .container-score {
 	
-	width: 100vw;
+	
+    width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
     }
 
 
-/******************form *******************/
+/****************** form *******************/
 .form{
     display: flex;
     box-sizing: border-box;
@@ -309,7 +337,7 @@ a.active,a:hover{
     margin-top: 50px;
    }
 .box{
-    width: 400px;
+    width: 50%;
     padding: 30px 100px;
     border-radius: 10px;
     text-align: center;
@@ -329,7 +357,7 @@ a.active,a:hover{
     margin:20px auto;
     padding: 14px 10px;
     text-align: center;
-    width: 200px;
+    
     border:2px solid #3498db;
     border-radius: 24px;
     color:black;
@@ -342,7 +370,7 @@ a.active,a:hover{
 }
 
 .box input[type="text"]:focus, .box input[type="password"]:focus{
-    width: 280px;
+    
     border-color:#2D25A0;
     box-shadow: 1.5px 0px 15px#3498db;
 }
@@ -372,25 +400,48 @@ a.active,a:hover{
 
   /*---------------------------------------------------Footer----------------------------------------------------*/
 
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
+  .footer
+  { 
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 80px;
   }
-  footer img{
-    width: 483.87px;
-    height: 110px;
+  .footer-header
+  {
+      display: inline-block;
+      margin-left:50%;
+      transform: translate(-50%);
   }
-  .social-link i{
-      color: gray;
-      height: 32px;
-      width: 32px;
-     }
- 
   
+  .footer-logo
+  {
+      width:80%;
+  }
+  
+  .footer-logo img 
+  {
+      width:80%;
+    
+     
+  }
+  
+  .footer-icon .fab
+  {
+      width: 20px;
+      height: 20;
+      font-size:20px;
+      color: #414141;
+      background-color:#bdbdbd;
+      margin: 0 15px 20px;
+      padding:15px;
+      border-radius: 50%;
+  }
+  
+  .copyright
+  {
+      font-size: 25px;
+      margin:10px 0;
+  }
  
 /********************************************************Media Query**********************************************/
  
@@ -401,36 +452,27 @@ a.active,a:hover{
 .container{
         width: 100vw;
         }
+main{
+    width: 100%;
+    
+}
  
-  nav ul li a{
-    font-size: 1rem;
-  }
+  
 
 .checkbtn{
-        display: block;
-      }
-ul{
- position: fixed;
- width: 100%;
- height: 100vh;
- background: #2c3e50;
- top: 80px;
- left: -100%;
- text-align: center;
- transition: all .5s;
-}
+    display: block;
+  }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -80%;
+        
+       }
      
-nav ul li a{
-        font-size: 1.25rem;
-      }
-a:hover,a.active{
-        background: none;
-        color: #0082e6;
-      }
-#check:checked ~ ul{
-        left: 0;
-      }
-
+.login{
+        padding-left: 70px;
+    }
 .login a{
         display: flex;
     }
@@ -443,12 +485,14 @@ header{
     }
 .banner-left h1{
         font-size: 35px;
-        margin-right: 250px;
+        margin-right: 235px;
     }
 .banner-img img{
-        width: 300px;
-      height: 250px;
-      padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+        width: 100%;
+      height: 100%;
+      
     }
     
 .players{
@@ -461,7 +505,16 @@ header{
         }
 .heightlight{
         flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        
     }
+.heightlight-img img{
+    width: 100%;
+    height: 90%;
+    margin-top: 60px;
+}    
 .container-score{
        display: none;
     }
@@ -469,14 +522,13 @@ footer{
         flex-direction: column;
         margin-left: 10px;
         margin-right: 80px;
+        width: 100%;
         
     }
-footer img{
-        height: 70px;
-        width: 200px;
-    }
+
 footer p{
     font-size: 0.625rem;
+    padding-left: 20px;
 }
     
 }
@@ -488,6 +540,36 @@ footer p{
     .container{
         width: 100%;
         height: 100%;  
+    }
+    header{
+        width: 100%;
+        
+    }
+   
+    
+    .checkbtn{
+            display: block;
+          }
+    ul{
+        position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 80px;
+     left: -80%;
+     text-align: center;
+     
+    }
+   .login{
+       padding-right: 40px;
+   }
+    .banner{
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
     }
     .players{
         grid-template-columns: repeat(2, 1fr);
